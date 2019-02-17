@@ -7,7 +7,10 @@ class Product(models.Model):
     price = models.IntegerField(default=0)
     description = models.TextField()
     brand = models.CharField(max_length=50)
-    image_url = models.TextField()
+    image_url = models.TextField() 
+
+    def __str__(self):
+        return self.product_name
 
 class Cart(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)

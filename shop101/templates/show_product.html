@@ -28,28 +28,18 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row mt-3">
-        {% for product in product_list %}
-        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              class="card-img-top"
-              src="{{product.image_url}}"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">{{product.product_name}}</h5>
-              <p class="card-text">
-                {{product.description}}
-              </p>
-              <a href="/show_product/{{product.id}}" class="btn btn-primary w-100">VIEW</a>
-            </div>
+  <div class="container">
+      <div class="row at -3">
+          <div class='col-6'> 
+              <img src="{{product.image_url}}" />
           </div>
-        </div>
-        {% endfor %}
+          <div class="col-6">
+              <h3>{{product.product_name}}</h3>
+              <p> {{product.description}}</p>
+                <h3>{{product.price}}</h3>
+          </div>
       </div>
-    </div>
+  </div>
 
     <!-- No HTML After This!!! -->
     <!-- <script

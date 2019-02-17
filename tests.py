@@ -1,3 +1,2 @@
-from django.test import TestCase
-
-# Create your tests here.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC ">
